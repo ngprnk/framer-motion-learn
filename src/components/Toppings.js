@@ -12,7 +12,11 @@ const containerVariant = {
     opacity:1,
     x:0,
     transition: {type: "spring", delay: 0.2, stiffness: 100}
-  }
+  },
+  exit: {
+    x: "-100vw",
+    transition: {ease: "easeInOut"}
+  },
 }
 
 const nextVariant = {

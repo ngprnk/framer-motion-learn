@@ -12,6 +12,10 @@ const containerVariant = {
     opacity:1,
     x:0,
     transition: {type: "spring", delay: 0.2, stiffness: 100}
+  },
+  exit: {
+    x: "-100vw",
+    transition: {ease: "easeInOut"}
   }
 }
 
@@ -23,6 +27,8 @@ const nextVariant = {
   },
 }
 
+
+
 const Base = ({ addBase, pizza }) => {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
@@ -31,6 +37,7 @@ const Base = ({ addBase, pizza }) => {
     variants={containerVariant}
     initial="hidden"
     animate="visible"
+    exit="exit"
     className="base container"
     >
 
