@@ -35,6 +35,7 @@ const Toppings = ({ addTopping, pizza }) => {
       variants={containerVariant}
       initial="hidden"
       animate="visible"
+      exit={"exit"}
     
     className="toppings container">
       
